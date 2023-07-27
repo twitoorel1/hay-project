@@ -1,0 +1,51 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.ts",
+  "scripts": {
+    "start": "node dist/server.js",
+    "build": "tsc --outDir dist && npm start",
+    "dev": "nodemon --exec ts-node src/server.ts",
+    "delete": "rd /s /q dist && npm run build && npm start",
+    "update-deps": "npm update --save",
+    "update-dev-deps": "npm update --save-dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "config": "^3.3.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "moment-timezone": "^0.5.43",
+    "mysql2": "^3.5.1",
+    "nodemailer": "^6.9.3",
+    "path": "^0.12.7",
+    "uuid": "^9.0.0",
+    "yup": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/config": "^3.3.0",
+    "@types/cors": "^2.8.13",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.17",
+    "@types/jsonwebtoken": "^9.0.2",
+    "@types/lodash": "^4.14.195",
+    "@types/multer": "^1.4.7",
+    "@types/node": "^20.4.2",
+    "@types/nodemailer": "^6.4.8",
+    "@types/uuid": "^9.0.2",
+    "@types/yup": "^0.32.0",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  }
+}
